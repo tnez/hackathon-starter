@@ -11,3 +11,17 @@ A starter kit to quickly get a hackathon-style project off the ground. Leverages
 ## Getting Started
 
 *Instructions coming...*
+
+## Development
+
+### Running the dev server
+
+```sh
+yarn run develop
+```
+
+### Build static site locally
+
+```sh
+yarn run build
+```
