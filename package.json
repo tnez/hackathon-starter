@@ -1,0 +1,17 @@
+{
+  "name": "farlab--hackathon-starter",
+  "version": "1.0.0",
+  "description": "Farlab's Hackathon Starter Kit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tnez/hackathon-starter"
+  },
+  "keywords": [
+    "hackathon",
+    "demo",
+    "starter",
+    "template"
+  ],
+  "author": "Travis Nesland <tnesland@gmail.com>",
+  "license": "MIT"
+}
