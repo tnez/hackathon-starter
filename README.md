@@ -10,7 +10,28 @@ A starter kit to quickly get a hackathon-style project off the ground. Leverages
 
 ## Getting Started
 
-*Instructions coming...*
+### Initializing the project
+
+*This should only be done once by one team member at the beginning of the project.*
+
+```sh
+git clone https://github.com/tnez/hackathon-starter --depth 1 your-project-name
+
+cd your-project-name
+yarn run init
+
+git remote add origin some-url-for-a-repo-you-have-created
+git push -u origin master
+```
+
+### Getting started as developer
+
+```sh
+git clone your-new-project-repo your-new-project-name
+
+cd your-new-project-name
+yarn install
+```
 
 ## Development
 
