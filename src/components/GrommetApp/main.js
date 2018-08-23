@@ -8,19 +8,21 @@ import './style/main.scss'
 
 export default class GrommetLayout extends React.Component {
   static propTypes = {
+    centered: PropTypes.bool,
     children: PropTypes.node.isRequired,
     requiresLogin: PropTypes.bool,
   }
 
   static defaultProps = {
+    centered: false,
     requiresLogin: false,
   }
 
   render() {
-    const { children, requiresLogin } = this.props
+    const { centered, children, requiresLogin } = this.props
 
     return (
-      <App centered={true}>
+      <App centered={centered}>
         {requiresLogin ? (
           <LoginForm
             onSubmit={({ username, password }) =>
