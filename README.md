@@ -4,9 +4,9 @@ A starter kit to quickly get a hackathon-style project off the ground. Leverages
 
 ## Pre-Hackathon Checklist
 
-- [ ] install **nvm** using the instructions here: [nvm#installation](https://github.com/creationix/nvm#installation)
-- [ ] install latest version of **node**: `nvm install 10`
-- [ ] install **yarn**: `brew install yarn --without-node`
+1. install **nvm** using the instructions here: [nvm#installation](https://github.com/creationix/nvm#installation)
+1. install latest version of **node**: `nvm install 10`
+1. install **yarn**: `brew install yarn --without-node`
 
 ## Getting Started
 
