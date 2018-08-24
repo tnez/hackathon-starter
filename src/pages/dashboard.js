@@ -1,7 +1,8 @@
 import React from 'react'
 
 import { Anchor, Box, Header, Menu, Sidebar, Split, Title } from 'grommet'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router'
+import { HashRouter } from 'react-router-dom'
 
 import { GrommetApp } from '../components'
 
@@ -13,7 +14,7 @@ export default class extends React.Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <GrommetApp>
           <Split flex="right">
             <Box>
@@ -23,9 +24,9 @@ export default class extends React.Component {
                 </Header>
                 <Box flex="grow" justify="start">
                   <Menu primary={true}>
-                    <Anchor path={{ path: '/dashboard', index: true }}>A-Thing</Anchor>
-                    <Anchor path="/dashboard/another-thing">Another Thing</Anchor>
-                    <Anchor path="/dashboard/yet-another-thing">Yet Another Thing</Anchor>
+                    <Anchor path={{ path: '/', index: true }}>A-Thing</Anchor>
+                    <Anchor path="/another-thing">Another Thing</Anchor>
+                    <Anchor path="/yet-another-thing">Yet Another Thing</Anchor>
                   </Menu>
                 </Box>
               </Sidebar>
@@ -36,13 +37,15 @@ export default class extends React.Component {
               full={true}
               justify="center"
             >
-              <Route exact path="/dashboard" component={testComp('This be a thing')} />
-              <Route path="/dashboard/another-thing" component={testComp('This be another thing')} />
-              <Route path="/dashboard/yet-another-thing" component={testComp('This be YET another thing')} />
+              <Switch>
+                <Route exact path="/" component={testComp('This be a thing')} />
+                <Route path="/another-thing" component={testComp('This be another thing')} />
+                <Route path="/yet-another-thing" component={testComp('This be YET another thing')} />
+              </Switch>
             </Box>
           </Split>
         </GrommetApp>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 }
